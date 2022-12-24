@@ -17,6 +17,8 @@ During this project, we have used the following libraries  :
 
 <li>Matplotlib: Matplotlib is a plotting library available for the Python programming language as a component of NumPy, a big data numerical handling resource. Matplotlib uses an object oriented API to embed plots in Python applications.</li>
 <img src="images/matplotlib.png">
-<li></li>
-<li></li>
+<li>Seaborn : Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.</li>
+<img src="seaborn.png">
+<li>***Sklearn*** : Scikit-learn is a key library for the Python programming language that is typically used in machine learning projects. Scikit-learn is focused on machine learning tools including mathematical, statistical and general purpose algorithms that form the basis for many machine learning technologies.</li>
+<img src="sklearn.jpg">
 </ul>
