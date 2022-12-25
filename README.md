@@ -2,6 +2,8 @@
 
 # :mortar_board: Reducing-Traffic-Mortality-in-the-USA :mortar_board:
 
+#### Context : Data Analysis Academic Project
+
 We analyze data collected by the National Highway Traffic Safety Administration and the National Association of Insurance Commissioners to wrangle, plot, dimensionally reduce and cluster data to make an attempt to find patterns and help reduce Traffic Mortality in USA.
 
 **How can we find a good strategy for reducing traffic-related deaths?**
@@ -15,7 +17,7 @@ While the rate of fatal road accidents has been decreasing steadily since the 80
 
 By looking at the demographics of traﬃc accident victims for each US state, we find that there is a lot of variation between states. Now we want to understand if there are patterns in this variation in order to derive suggestions for a policy action plan. In particular, instead of implementing a costly nation-wide plan we want to focus on groups of states with similar profiles. How can we find such groups in a statistically sound way and communicate the result effectively?
 
-#### Context : Data Analysis Academic Project
+
 
 ## :file_folder: Setup
 
@@ -38,6 +40,7 @@ By looking at the demographics of traﬃc accident victims for each US state, we
 ### :file_folder: Libraries
 
 During this project, we have used the following libraries  :
+:point_down: :point_down:
 
 <ul>
 <li>NumPy : NumPy is a Python library used for working with arrays.</li>
@@ -62,7 +65,7 @@ During this project, we have used the following libraries  :
 
 In our project we have used two datasets : **miles-driven.csv** , **road-accidents.csv**
 
-## :file_folder: Project Tasks
+## :file_folder: Project Tasks :point_down:
 <ol>
 <li>The raw data files and their format</li>
 <li>Read in and get an overview of the data</li>
@@ -83,7 +86,7 @@ In our project we have used two datasets : **miles-driven.csv** , **road-acciden
 
 By analysing our dataset **road-accidents.csv** we see :
 
-#### Read in and get an overview of the data
+#### 1- Read in and get an overview of the data
 
 
 |    | state      |   drvr_fatl_col_bmiles |   perc_fatl_speed |   perc_fatl_alcohol |   perc_fatl_1st_time |
@@ -104,7 +107,7 @@ The columns are:
 
 :small_orange_diamond: perc_fatl_1st_time = Percentage Of Drivers Involved In Fatal Collisions Who Had Not Been Involved In Any Previous Accidents (2011).
   
-#### Create a textual and a graphical summary of the data
+#### 2- Create a textual and a graphical summary of the data
 
 Then we use ```.describe``` to return the description of the data and to view some basic statistical details like percentile, mean, std etc. we observe this:
 
@@ -124,7 +127,7 @@ The result is like this :
 
 <img src="images/download.png" >
 
-#### Quantify the association of features and accidents 
+#### 3- Quantify the association of features and accidents 
 We can already see some potentially interesting relationships between the target variable (the number of fatal accidents) and the feature variables (the remaining three columns).
 now we can compute the Pearson correlation coefficient matrix to quantify correlation between variables. This is the output :
 
@@ -138,7 +141,7 @@ now we can compute the Pearson correlation coefficient matrix to quantify correl
 <p>the correlation table shows that the number of fatal accidents is most strongly correlated with alcohol consumption.</p>
 <p>We have learned that alcohol consumption is weakly associated with the number of fatal accidents across states. This could lead us to conclude that alcohol consumption should be a focus for further investigations and maybe strategies should divide states into high versus low alcohol consumption in accidents.</p>
 
-####  Perform PCA on standardized data
+####  4- Perform PCA on standardized data
 
 :bar_chart: One way to group the data is to use PCA (**Principal Component Analysis**)
 
@@ -151,23 +154,23 @@ We will create a ```scatter plot``` of the first principle components and explor
 
 <img src="images/scatter.png" >
 
-#### Find clusters of similar states in the data
+#### 5- Find clusters of similar states in the data
 <p>It was not entirely clear from the PCA scatter plot how many groups in which the states cluster. To assist with identifying a reasonable number of clusters, we can use KMeans clustering by creating a scree plot and finding the "elbow", which is an indication of when the addition of more clusters does not add much explanatory power</p>
 <img src="images/plot.png" >
 
-####  KMeans to visualize clusters in the PCA scatter plot
+####  5- KMeans to visualize clusters in the PCA scatter plot
 
 <p>Since there wasn't a clear elbow in the scater plot, let's see how the PCA scatter plot looks if we color the states according to the cluster to which they are assigned.</p>
 
-<p>Kmeans to visualize the clusters in the pca , in our analysis we will assign the states in 3 groups</p> :point_down:
+<p>Kmeans to visualize the clusters in the pca , in our analysis we will assign the states in 3 groups</p> 
 
 <img src="images/kmeans.png" >
 
-####  Compute the number of accidents within each cluster
+####  6- Compute the number of accidents within each cluster
 
 <p>Since resources and time are limited, it is useful to start off with an intervention in one of the three groups first. Which group would this be? To determine this, we will include data on how many miles are driven in each state, because this will help us to compute the total number of fatal accidents in each state.</p>
 
-:file_folder: We will use **miles-driven.csv** 
+ We will use **miles-driven.csv** 
 
 |    | state      |   million_miles_annually |
 |---:|:-----------|-------------------------:|
@@ -196,6 +199,7 @@ I choose that cluster_num = 'perc_fatl_alcohol'
 ## :file_folder: Conclusion
 
 After realizing this project we can conclude that this project lets us apply skills from:
+:point_down: :point_down: :point_down:
 
 > - **Introduction to Shell for Data Science,** including how to navigate the file system and view files
 > - **pandas Foundations,** including reading, exploring, filtering, and grouping data
