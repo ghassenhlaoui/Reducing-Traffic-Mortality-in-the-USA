@@ -1,41 +1,64 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ghassenhlaoui/Reducing-Traffic-Mortality-in-the-USA/HEAD)
 
-# Reducing-Traffic-Mortality-in-the-USA
-=======
+# :mortar_board: Reducing-Traffic-Mortality-in-the-USA
 
-
-## Presentation
-
-### Libraries
-During this project, we have used the following libraries  :
-<ul>
-<li>NumPy : NumPy is a Python library used for working with arrays.</li>
-<img src="images/numpy.png">
-------------------------- ------------------------- ------------------------- -------------------------
-<li>Pandas : Pandas is an open source Python package that is most widely used for data science/data analysis and machine learning tasks. It is built on top of another package named Numpy, which provides support for multi-dimensional arrays.</li>
-<img src="images/pandas.png">
-------------------------- ------------------------- ------------------------- -------------------------
-<li>Matplotlib: Matplotlib is a plotting library available for the Python programming language as a component of NumPy, a big data numerical handling resource. Matplotlib uses an object oriented API to embed plots in Python applications.</li>
-<img src="images/matplotlib.png">
-------------------------- ------------------------- ------------------------- -------------------------
-<li>Seaborn : Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.</li>
-<img src="images/seaborn.png">
-------------------------- ------------------------- ------------------------- -------------------------
-<li>Sklearn : Scikit-learn is a key library for the Python programming language that is typically used in machine learning projects. Scikit-learn is focused on machine learning tools including mathematical, statistical and general purpose algorithms that form the basis for many machine learning technologies.</li>
-<img src="images/sklearn.jpg">
-</ul>
-------------------------- ------------------------- ------------------------- -------------------------
-------------------------- ------------------------- ------------------------- -------------------------
-------------------------- ------------------------- ------------------------- -------------------------
-------------------------- ------------------------- ------------------------- -------------------------
-## Project
-
-#### Reducing-Traffic-Mortality-in-the-USA
-
-<img src="images/car-accident.jpg" >
 We analyze data collected by the National Highway Traffic Safety Administration and the National Association of Insurance Commissioners to wrangle, plot, dimensionally reduce and cluster data to make an attempt to find patterns and help reduce Traffic Mortality in USA.
 
-### Datasets
+How can we find a good strategy for reducing traffic-related deaths?
+
+This Project was completed on DataCamp.
+
+## :file_folder: Project Description
+
+<img src="images/car-accident.jpg" >
+While the rate of fatal road accidents has been decreasing steadily since the 80s, the past ten years have seen a stagnation in this reduction. Coupled with the increase in number of miles driven in the nation, the total number of traffic related-fatalities has now reached a ten year high and is rapidly increasing.
+
+By looking at the demographics of traﬃc accident victims for each US state, we find that there is a lot of variation between states. Now we want to understand if there are patterns in this variation in order to derive suggestions for a policy action plan. In particular, instead of implementing a costly nation-wide plan we want to focus on groups of states with similar profiles. How can we find such groups in a statistically sound way and communicate the result effectively?
+
+
+
+## :file_folder: Setup
+
+<ul>
+<li>Download the dataset</li>
+<li>Download the Jupyter Notebook.</li>
+</ul>
+
+### Install the requirements
+
+> - Install the pandas library using command pip install pandas.
+
+> - Install the numpy library using command pip install numpy.
+
+> - Make sure you use Python 3.
+
+> - Run the jupyter notebook
+
+### :file_folder: Libraries
+
+* [![numpy][numpy.js]][numpy-url]
+* [![pandas][pandas.js]][pandas-url]
+* [![matplotlib][matplotlib.js]][matplotlib-url]
+* [![seaborn][seabor.js]][seaborn-url]
+* [![scikit-learn][scikit-learn.js]][scikit-learn-url]
+
+
+
+
+## :mortar_board: Project :mortar_board:
+
+## Reducing-Traffic-Mortality-in-the-USA
+
+
+
+
+
+
+
+
+
+
+### :file_folder: Datasets
 
 In our project we have used two datasets : **miles-driven.csv** , **road-accidents.csv**
 
@@ -44,11 +67,6 @@ In our project we have used two datasets : **miles-driven.csv** , **road-acciden
 > - Install the pandas library using command pip install pandas.
 > - Install the numpy library using command pip install numpy.
 
-```import pandas as pd```
-
-```import numpy as np```
-
-```import matplotlib.pyplot as plt```
 
 :file_folder: Our dataset **road-accidents.csv** show this :
 
